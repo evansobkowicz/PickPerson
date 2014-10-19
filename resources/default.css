@@ -1,0 +1,26 @@
+navigation-bar {
+  background-color: #570c71;
+  -ios-tint-color: #fff;
+  ios-tint-color: #fff;
+}
+navigation-bar title {
+  color: #fff;
+}
+navigation-bar label {
+  color: #fff;
+}
+navigation-bar button-appearance, navigation-bar back-bar-button  {
+  color: #fff;
+}
+
+
+table-view-cell label {
+  font-weight: bold;
+  color: #570c71;
+}
+
+#home button {
+  font-weight: bold;
+  color: #570c71;
+  font-size: 24px;
+}
