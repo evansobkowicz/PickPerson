@@ -16,9 +16,3 @@ nbproject
 .idea
 .dat*.*
 .bundle
-
-# Ignore motion-config-vars config file
-resources/app.yml
-
-# Ignore motion-config-vars config file
-resources/app.yml
