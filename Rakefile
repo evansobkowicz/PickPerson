@@ -24,8 +24,8 @@ Motion::Project::App.setup do |app|
   app.sdk_version = '8.0'
   app.deployment_target = '7.1'
 
-  app.device_family = [:iphone]
-  app.interface_orientations = [:portrait]
+  app.device_family = [:iphone, :ipad]
+  app.interface_orientations = [:portrait, :landscape_left, :landscape_right]
 
   app.identifier = 'com.esobko.pickperson'
   app.seed_id = 'BFBSCX5789'
@@ -52,5 +52,6 @@ Motion::Project::App.setup do |app|
   end
 
 end
+
 task :"build:simulator" => :"schema:build"
 task :"build:simulator" => :"schema:build"

@@ -11,6 +11,11 @@ class HomeScreen < PM::Screen
     setup_home
   end
 
+  def on_rotate
+    @action_button.removeFromSuperview if @action_button
+    setup_home
+  end
+
   def setup_home
     @action_button = UIButton.buttonWithType UIButtonTypeRoundedRect
     @action_button.setTitle "Random Person", forState: UIControlStateNormal
