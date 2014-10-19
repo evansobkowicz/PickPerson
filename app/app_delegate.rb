@@ -18,7 +18,7 @@ class AppDelegate < PM::Delegate
 
   def setup_pixate_monitor
     return unless Device.simulator?
-    PXStylesheet.styleSheetFromFilePath('/Users/evan/Documents/Projects/Apps/PickStudent/resources/default.css', withOrigin:PXStylesheetOriginApplication)
+    PXStylesheet.styleSheetFromFilePath('/Users/evan/Documents/Projects/Apps/PickPerson/resources/default.css', withOrigin:PXStylesheetOriginApplication)
     PixateFreestyle.updateStylesForAllViews
     PXStylesheet.currentApplicationStylesheet.monitorChanges = true
   end

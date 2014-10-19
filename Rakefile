@@ -17,9 +17,9 @@ Bundler.require
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
-  app.name = 'PickStudent'
+  app.name = 'PickPerson'
 
-  app.version = '0.1'
+  app.version = '0.2'
 
   app.sdk_version = '8.0'
   app.deployment_target = '7.1'
@@ -27,14 +27,14 @@ Motion::Project::App.setup do |app|
   app.device_family = [:iphone]
   app.interface_orientations = [:portrait]
 
-  app.identifier = 'com.esobko.pickstudent'
+  app.identifier = 'com.esobko.pickperson'
   app.seed_id = 'BFBSCX5789'
   app.entitlements['application-identifier'] = app.seed_id + '.' + app.identifier
   app.entitlements['keychain-access-groups'] = [
     app.seed_id + '.' + app.identifier
   ]
 
-  app.fonts = ['fontawesome-webfont.ttf'] # 'trajan-pro.otf'
+  app.fonts = ['fontawesome-webfont.ttf']
 
   app.pixatefreestyle.framework = 'vendor/PixateFreestyle.framework'
 

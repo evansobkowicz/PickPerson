@@ -7,6 +7,7 @@ class ListScreen < PM::TableScreen
   def on_load
     view.styleId = 'list'
     icon_button(:times, :close, :left)
+    icon_button(:plus, :open_add_screen, :right)
   end
 
   def table_data
@@ -29,6 +30,11 @@ class ListScreen < PM::TableScreen
     else
       App.alert('Error: Could not delete person.')
     end
+    update_table_data
+  end
+
+  def on_return(args)
+    update_table_data
   end
 
 end
