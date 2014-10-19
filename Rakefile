@@ -1,5 +1,5 @@
-DEVELOPMENT_PROFILE = '5dda861b-2075-4286-974b-e36586efc9b7'
-DISTRIBUTION_PROFILE = 'b414b398-1e38-4926-a5a6-47d9f48358c8'
+DEVELOPMENT_PROFILE = '73314eba-d509-473d-a07c-3ca91128bf03'
+DISTRIBUTION_PROFILE = '18f75652-37ac-476c-867b-5a6165c43de3'
 
 DEVELOPMENT_CERT = 'iPhone Developer: Evan Sobkowicz (26958FJYJ9)'
 DISTRIBUTION_CERT = 'iPhone Distribution: Evan Sobkowicz (BFBSCX5789)'
@@ -11,7 +11,6 @@ require "rubygems"
 require 'sugarcube-all'
 require 'motion-pixatefreestyle'
 require 'motion-map'
-require 'motion-config-vars'
 require 'bundler'
 Bundler.require
 
