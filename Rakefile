@@ -11,6 +11,7 @@ require "rubygems"
 require 'sugarcube-all'
 require 'motion-pixatefreestyle'
 require 'motion-map'
+require 'motion-blitz'
 require 'bundler'
 Bundler.require
 
@@ -36,6 +37,10 @@ Motion::Project::App.setup do |app|
   app.fonts = ['fontawesome-webfont.ttf']
 
   app.pixatefreestyle.framework = 'vendor/PixateFreestyle.framework'
+
+  app.pods do
+    pod 'SVProgressHUD'
+  end
 
   app.release do
     app.codesign_certificate = DISTRIBUTION_CERT

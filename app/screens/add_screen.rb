@@ -12,7 +12,7 @@ class AddScreen < PM::FormScreen
   def add_person(name)
     Person.create(name: name)
     cdq.save
-    App.alert(name + ' was added!')
+    Motion::Blitz.success
   end
 
   def form_data

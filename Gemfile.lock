@@ -58,6 +58,8 @@ GEM
     json_pure (1.8.1)
     methadone (1.7.0)
       bundler
+    motion-blitz (1.1.0)
+      motion-cocoapods (>= 1.4.0)
     motion-cocoapods (1.6.0)
       cocoapods (>= 0.34)
     motion-map (0.0.4)
@@ -89,6 +91,7 @@ DEPENDENCIES
   bubble-wrap
   cdq
   motion-awesome!
+  motion-blitz
   motion-pixatefreestyle
   rake
   sugarcube
